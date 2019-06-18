@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: rgb(226, 223, 40);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+body {
+
+    background: url('c:/Users/sarai/Documents/Pictures/pawel-czerwinski-1475180-unsplash.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.inputContainer1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+
+.toDoList-form {
+    max-width: 750px;
+    margin: 0 auto;
+    background: rgba(97, 40, 150, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+    color: rgb(226, 223, 40);
+}
+
+#input-field {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;    
+}
+
+#input-field,
+.msg {
+    width: 48%;
+}
+
+#input-field #inputToDoItem,
+.msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgb(226, 223, 40);
+    padding: 10px;
+    color: rgb(226, 223, 40);
+    width: 100%;
+}
+
+.msg textarea {
+    height: 100px;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(226, 223, 40);
+}
+
+::-moz-input-placeholder {
+    color: rgb(226, 223, 40);
+}
+
+::-ms-input-placeholder {
+    color: rgb(226, 223, 40);
+}
+
+.button1 {
+    background: rgba(97, 40, 150, 0.60);
+    text-align: center;
+    padding: 15px;
+    border-radius: 2px;
+    color: rgb(226, 223, 40);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button2 {
+    background: rgba(97, 40, 150, 0.60);
+    text-align: center;
+    padding: 15px;
+    border-radius: 2px;
+    color: rgb(226, 223, 40);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media (max-width: 600px) {    
+    .toDoList-form {
+        flex-direction: column;        
+    }
+    .msg textarea {
+        height: 80px;
+    }
+
+    #input-field,
+    .msg {
+        width:100%;
+    }
+}
