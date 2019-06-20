@@ -1,26 +1,50 @@
+var addbutton = document.getElementById("button1");
 var userInput = document.getElementById("inputToDoItem");
 var user = document.getElementById("userList");
-var listitems = user.children;
-var itemMove = user.children;
+var clearbutton = document.getElementById("button2");
 
 
-user.addEventListener("click", buttonFunction1);
-user.addEventListener("click", buttonFunction2);
-function buttonFunction1() {  
-    var node = document.createElement("li");
-    var textnode = document.createTextNode(userInput.value);
-    node.appendChild(textnode);
-    user.appendChild(node);
+addbutton.addEventListener("click", buttonFunction1);
+clearbutton.addEventListener("click", buttonFunction2);
 
+function buttonFunction1() { 
+  
     
-    document.getElementById("inputToDoItem").value = " ";
-    userInput.insertBefore(user, listitems[0]);
+    var placeholder = userInput.value; 
+    if (placeholder.trim()) {
+     
+        var node = document.createElement("li");
+        var textnode = document.createTextNode(placeholder);        
+        
+        node.appendChild(textnode);
+
+        userInput.value = (" ");
+           
+        var addButton1 = document.createElement("BUTTON");
+        addButton1.innerHTML = "Delete Item";
+        addButton1.className = "remove";
+        addButton1.addEventListener("click", removeItem);
+        node.appendChild(addButton1);
+        user.appendChild(node);        
+         
+    }        
+
+    else {
+        alert("You have not enter a 'Do-To' item! Please try again.");
+    }
+    
+        
 }
 
-function buttonFunction2() {
-    user.remove(itemMove);
+// clear entire list
+clearButton.addEventListener("click", buttonFunction2);
+function buttonFunction2 () {
+    user.innerHTML = " ";
+}
 
-    
-   
+// remove a task from the list
+function removeItem(e){
+    // get the parent list item to remove
+    var taskItem = e.target.parentElement;
+    user.removeChild(taskItem); 
   }
-
