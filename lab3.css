@@ -8,16 +8,18 @@
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-    color: rgb(226, 223, 40);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#p1 {
+    color: rgb(130, 149, 158);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px;
+    font-size: 30px;
+    font-style: italic;
     text-align: center;
-    margin-top: 50px;
 }
 
 body {
 
-    background: url('c:/Users/sarai/Documents/Pictures/pawel-czerwinski-1475180-unsplash.jpg') no-repeat top center;
+    background: url('c:/Users/sarai/Documents/Pictures/kerri-shaver-1404201-unsplash.jpg') no-repeat top center;
     background-size: cover;
     height: 100vh;
 }
@@ -27,18 +29,18 @@ body {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    padding: 0 20px;
+    padding: 0 0px;
 }
 
 .toDoList-form {
     max-width: 750px;
     margin: 0 auto;
-    background: rgba(97, 40, 150, 0.8);
+    background: rgba(219, 201, 35, 0.178);
     padding: 30px;
     border-radius: 5px;
     display: flex;   
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
-    color: rgb(226, 223, 40);
+    color: rgb(130, 149, 158);
 }
 
 #input-field {
@@ -57,9 +59,9 @@ body {
     margin: 10px 0;
     background: transparent;
     border: 0;
-    border-bottom: 2px solid rgb(226, 223, 40);
+    border-bottom: 2px solid rgb(130, 149, 158);
     padding: 10px;
-    color: rgb(226, 223, 40);
+    color: rgb(130, 149, 158);
     width: 100%;
 }
 
@@ -68,35 +70,68 @@ body {
 }
 
 ::-webkit-input-placeholder {
-    color: rgb(226, 223, 40);
+    color: rgb(130, 149, 158);
 }
 
 ::-moz-input-placeholder {
-    color: rgb(226, 223, 40);
+    color: rgb(130, 149, 158);
 }
 
 ::-ms-input-placeholder {
-    color: rgb(226, 223, 40);
+    color: rgb(130, 149, 158);
 }
 
-.button1 {
-    background: rgba(97, 40, 150, 0.60);
+#button1 {
+    background: rgba(219, 201, 35, 0.178);
     text-align: center;
     padding: 15px;
     border-radius: 2px;
-    color: rgb(226, 223, 40);
+    color: rgb(130, 149, 158);
     cursor: pointer;
     text-transform: uppercase;
 }
 
-.button2 {
-    background: rgba(97, 40, 150, 0.60);
+#button2 {
+    background: rgba(219, 201, 35, 0.178);
     text-align: center;
     padding: 15px;
     border-radius: 2px;
-    color: rgb(226, 223, 40);
+    color: rgb(130, 149, 158);
     cursor: pointer;
     text-transform: uppercase;
+}
+
+#button3 {
+    background: rgba(219, 201, 35, 0.178);
+    text-align: center;
+    padding: 15px;
+    border-radius: 2px;
+    color: rgb(130, 149, 158);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+
+
+button {
+    padding: 10px;
+    border-radius: 3px;
+    color: darkslategrey;
+    font-weight: 550;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+button.remove {
+    padding: 5px;
+    margin-left: 20px;
+    background-color: lightslategrey;
+    opacity: 0.5;
+}
+
+button.remove:hover {
+    background-color: lightseagreen;
 }
 
 @media (max-width: 600px) {    
