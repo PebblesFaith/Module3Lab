@@ -1,13 +1,13 @@
-// Create a addbutton variable node retrieve from HTML button element.
+// Create a addbutton variable node retrieved from HTML button element.
 var addbutton = document.getElementById("button1");
-// Create a userInput variable node retrieve from HTML input element.
+// Create a userInput variable node retrieved from HTML input element.
 var userInput = document.getElementById("inputToDoItem");
-// Create a user variable node retrieve from HTML ul element.
+// Create a user variable node retrieved from HTML ul element.
 var user = document.getElementById("userList");
 
-// Create a textAreaAddButton variable node retrieve from HTML button element.
+// Create a textAreaAddButton variable node retrieved from HTML button element.
 var textAreaAddButton = document.getElementById("button3");
-// Create a textAreaClearButton variable node retrieve from HTML button element.
+// Create a textAreaClearButton variable node retrieved from HTML button element.
 var textAreaClearButton = document.getElementById("button4");
 
 addbutton.addEventListener("click", buttonFunction1);
