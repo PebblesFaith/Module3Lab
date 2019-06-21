@@ -10,22 +10,25 @@ var textAreaAddButton = document.getElementById("button3");
 // Create a textAreaClearButton variable node retrieved from HTML button element.
 var textAreaClearButton = document.getElementById("button4");
 
+//Function (buttonFunction1) specifies to run when a user clicks onto an addbutton then an event will occurs.
 addbutton.addEventListener("click", buttonFunction1);
+//Function (buttonFunction2) specifies to run when a user clicks onto an clearbutton then an event will occurs.
 clearbutton.addEventListener("click", buttonFunction2);
 
-
 function buttonFunction1() {   
-    
+    // Create a placeholder variable node to store userInput value.
     var placeholder = userInput.value;
-    if (placeholder.trim()) {
-     
+    // Create if/else statement argument for placeholder variable to include no white spaces, as user input.
+    if (placeholder.trim()) {     
+        // Create a node variable in order to create user interactive ul element list entries.
         var node = document.createElement("li");
+        // Create textnode variable node for user input contents.
         var textnode = document.createTextNode(placeholder);        
-        
+        // Add node to the created li element.
         node.appendChild(textnode);
-
+        // Clear user input value from the textbox or linebox. 
         userInput.value = (" ");
-           
+        // Create an addButton1 variable in order to create user interactive button element added to the ul list entries.   
         var addButton1 = document.createElement("BUTTON");
         addButton1.innerHTML = "Delete Item";
         addButton1.className = "remove";
