@@ -82,6 +82,7 @@ body {
     color: rgb(130, 149, 158);
 }
 
+/* Add button1 attributes styles to the button elements.*/
 #button1 {
     background: rgba(219, 201, 35, 0.178);
     text-align: center;
@@ -92,6 +93,7 @@ body {
     text-transform: uppercase;
 }
 
+/* Add button2 attributes styles to the button elements.*/
 #button2 {
     background: rgba(219, 201, 35, 0.178);
     text-align: center;
@@ -102,6 +104,7 @@ body {
     text-transform: uppercase;
 }
 
+/* Add button3 attributes styles to the button elements.*/
 #button3 {
     background: rgba(219, 201, 35, 0.178);
     text-align: center;
@@ -112,6 +115,7 @@ body {
     text-transform: uppercase;
 }
 
+/* Add button4 attributes styles to the button elements.*/
 #button4 {
     background: rgba(219, 201, 35, 0.178);
     text-align: center;
@@ -122,7 +126,7 @@ body {
     text-transform: uppercase;
 }
 
-
+/* Add button.remove attributes styles to the user list items button elements.*/
 button.remove {
     padding: 5px;
     margin-left: 20px;
@@ -130,6 +134,7 @@ button.remove {
     opacity: 0.5;
 }
 
+/* Add button.remove:hover attributes styles to the user list items mouse over button elements.*/
 button.remove:hover {
     background-color: lightseagreen;
 }
