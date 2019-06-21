@@ -1,4 +1,4 @@
-
+/* Add paragraph (p1) element styles to header in color, fonts, margin and text. */
 #p1 {
     color: rgb(130, 149, 158);
     font-family: 'Times New Roman', Times, serif;
@@ -8,6 +8,7 @@
     text-align: center;
 }
 
+/* Add body element styles in background silhouette picture, and height. */
 body {
 
     background: url('c:/Users/sarai/Documents/Pictures/kerri-shaver-1404201-unsplash.jpg') no-repeat top center;
@@ -15,6 +16,7 @@ body {
     height: 100vh;
 }
 
+/* Add inputContainer1 attributes styles to the div element for creating flex box container. */
 .inputContainer1 {
     position: absolute;
     top: 50%;
@@ -23,6 +25,7 @@ body {
     padding: 0 0px;
 }
 
+/* Add toDoList-form attributes styles to the div element for creating form. */
 .toDoList-form {
     max-width: 750px;
     margin: 0 auto;
@@ -34,17 +37,20 @@ body {
     color: rgb(130, 149, 158);
 }
 
+/* Add input-field attributes styles to the div element in creating individual flex boxes. */
 #input-field {
     display: flex;
     flex-direction: column;
     margin-right: 4%;    
 }
 
+/* Add input-field attributes styles to the div element in creating individual standardized flex boxes widths. */
 #input-field,
 .msg {
     width: 75%;
 }
 
+/* Add attributes styles to the elements in order to transforms textboxes into input lines. */
 #input-field #inputToDoItem,
 .msg textarea, #message1 {
     margin: 10px 0;
@@ -56,6 +62,8 @@ body {
     width: 100%;
 }
 
+/* Add msg textarea attributes styles to the textarea element in order to add specific height to the
+   textbox area. */
 .msg textarea {
     height: 75px;
 }
