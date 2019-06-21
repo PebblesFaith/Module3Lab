@@ -24,21 +24,28 @@ function buttonFunction1() {
         var node = document.createElement("li");
         // Create textnode variable node for user input contents.
         var textnode = document.createTextNode(placeholder);        
-        // Add node to the created li element.
+        // Add create ul li element to the input element textbox or linebox.
         node.appendChild(textnode);
         // Clear user input value from the textbox or linebox. 
         userInput.value = (" ");
         // Create an addButton1 variable in order to create user interactive button element added to the ul list entries.   
         var addButton1 = document.createElement("BUTTON");
+        // Add text value to the create button.
         addButton1.innerHTML = "Delete Item";
+        // Add class element name to the button.
         addButton1.className = "remove";
+        /* Function (removeItem) specifies to run when a user clicks onto an addbutton1 then an event
+          will occurs. */
         addButton1.addEventListener("click", removeItem);
+         // Add create ul li element beside the button element.
         node.appendChild(addButton1);
+        // Add user input element into the created ul li element.
         user.appendChild(node); 
          
     }        
 
     else {
+        // Create an alert if user has not enter any input texts.
         alert("You have not enter a 'Do-To' item! Please try again.");
     }    
 }
