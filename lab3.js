@@ -50,26 +50,28 @@ function buttonFunction1() {
     }    
 }
 
-// clear entire list
+// Clear entire user list.
 clearButton.addEventListener("click", buttonFunction2);
 function buttonFunction2 () {
     user.innerHTML = " ";   
 }
 
+// Add user to do list name.
 textAreaAddButton.addEventListener("click", buttonFunction3);
 function buttonFunction3 () {
     var x = document.getElementById("message1").value;
     document.getElementById("p2").innerHTML = x;     
 }
 
+// Clear user to do list name.
 textAreaClearButton.addEventListener("click", buttonFunction4);
 function buttonFunction4 () {
     p2.innerHTML = " ";   
 }
 
-// remove a task from the list
+// Remove user individual to do list item from the ul li element.
 function removeItem(e){
-    // get the parent list item to remove
+    // And, get the parent list item to remove
     var taskItem = e.target.parentElement;
     user.removeChild(taskItem); 
   }
