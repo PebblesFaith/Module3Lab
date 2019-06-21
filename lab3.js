@@ -57,6 +57,7 @@ textAreaAddButton.addEventListener("click", buttonFunction3);
 function buttonFunction3 () {
     var x = document.getElementById("message1").value;
     document.getElementById("p2").innerHTML = x;   
+    x.value = " ";
 }
 
 textAreaClearButton.addEventListener("click", buttonFunction4);
