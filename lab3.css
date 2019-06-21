@@ -68,14 +68,16 @@ body {
     height: 75px;
 }
 
+/* Allows developers to style in Chrome/Opera/Safari browsers.*/
 ::-webkit-input-placeholder {
     color: rgb(130, 149, 158);
 }
-
+/* Allows developers to style in Firefox 19+ browser. */
 ::-moz-input-placeholder {
     color: rgb(130, 149, 158);
 }
 
+/* Allows developers to style in IE 10+ browser */
 ::-ms-input-placeholder {
     color: rgb(130, 149, 158);
 }
@@ -120,14 +122,6 @@ body {
     text-transform: uppercase;
 }
 
-button {
-    padding: 10px;
-    border-radius: 3px;
-    color: darkslategrey;
-    font-weight: 550;
-    text-transform: uppercase;
-    font-size: 12px;
-}
 
 button.remove {
     padding: 5px;
@@ -140,16 +134,29 @@ button.remove:hover {
     background-color: lightseagreen;
 }
 
+/* Responsive layout makes the one (1) column stack on top of each other instead of next to each other
+  in row.*/
 @media (max-width: 600px) {    
     .toDoList-form {
         flex-direction: column;        
     }
-    .msg textarea {
-        height: 80px;
-    }
-
-    #input-field,
-    .msg {
-        width:100%;
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
