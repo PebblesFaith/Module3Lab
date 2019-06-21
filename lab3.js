@@ -10,9 +10,9 @@ var textAreaAddButton = document.getElementById("button3");
 // Create a textAreaClearButton variable node retrieved from HTML button element.
 var textAreaClearButton = document.getElementById("button4");
 
-//Function (buttonFunction1) specifies to run when a user clicks onto an addbutton then an event will occurs.
+//Function (buttonFunction1) specifies to run when a user clicks onto an addbutton then an event will occur.
 addbutton.addEventListener("click", buttonFunction1);
-//Function (buttonFunction2) specifies to run when a user clicks onto an clearbutton then an event will occurs.
+//Function (buttonFunction2) specifies to run when a user clicks onto an clearbutton then an event will occur.
 clearbutton.addEventListener("click", buttonFunction2);
 
 function buttonFunction1() {   
@@ -24,9 +24,9 @@ function buttonFunction1() {
         var node = document.createElement("li");
         // Create textnode variable node for user input contents.
         var textnode = document.createTextNode(placeholder);        
-        // Add create ul li element to the input element textbox or linebox.
+        // Add create ul li element to the input element textbox or line box.
         node.appendChild(textnode);
-        // Clear user input value from the textbox or linebox. 
+        // Clear user input value from the textbox or line box. 
         userInput.value = (" ");
         // Create an addButton1 variable in order to create user interactive button element added to the ul list entries.   
         var addButton1 = document.createElement("BUTTON");
@@ -45,8 +45,8 @@ function buttonFunction1() {
     }        
 
     else {
-        // Create an alert if user has not enter any input texts.
-        alert("You have not enter a 'Do-To' item! Please try again.");
+        // Create an alert if user has not entered any input texts.
+        alert("You have not entered a 'Do-To' item! Please try again.");
     }    
 }
 
